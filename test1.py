@@ -1,4 +1,8 @@
 # coding=utf-8
+"""
+翻译接口查询
+
+"""
 
 import sys
 import re
