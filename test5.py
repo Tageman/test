@@ -29,4 +29,4 @@ def alphabet_position(text):
 
 if __name__ == '__main__':
 
-    alphabet_position('The sunset sets at twelve o\'clock.')
+    alphabet_position("The sunset sets at twelve o' clock.")
