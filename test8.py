@@ -9,7 +9,7 @@
 
 def insert_sort(lists):
 
-    if lists%1 !=0 :
+    if not isinstance(lists,int):
         print('please check you params')
     else:
         lists = str(lists)
@@ -29,7 +29,7 @@ def insert_sort(lists):
 
 
 def bubble_sort(lists):
-    if lists%1 != 0:
+    if not isinstance(lists, int):
         print('please check you params')
     else:
         lists = list(str(lists))
