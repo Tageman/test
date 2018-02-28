@@ -1,7 +1,7 @@
 # -*- coding=UTF-8 -*-
 
 """
-使用多种排序进行数值排序
+使用多种排序进行数值排序[这边需要注意的是：python int类型最大值代表的是：2147483647]
 1、插入排序（ 后边的数依次和前边已经排好序的数值对比换位置 ）
 2、冒泡排序（ 双层循环判断 ）
 """
@@ -9,7 +9,7 @@
 
 def insert_sort(lists):
 
-    if not isinstance(lists,int):
+    if not isinstance(lists,long):
         print('please check you params')
     else:
         lists = str(lists)
@@ -29,7 +29,7 @@ def insert_sort(lists):
 
 
 def bubble_sort(lists):
-    if not isinstance(lists, int):
+    if not isinstance(lists, long):
         print('please check you params')
     else:
         lists = list(str(lists))
@@ -44,5 +44,6 @@ def bubble_sort(lists):
 
 
 if __name__ == '__main__':
-    insert_sort(100986754535)
-    bubble_sort(100986754535)
+    insert_sort(1009832132167545)
+    insert_sort(51)   # type is int so this output 'please check you params'
+    bubble_sort(1009832131236755)
